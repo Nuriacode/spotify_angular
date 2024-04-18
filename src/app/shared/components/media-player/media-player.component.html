@@ -17,13 +17,12 @@
 
 
 <!-- ZONE TEMPLATES -->
-
 <ng-template #artistZone>
     <div class="artist-inside" *ngIf="true">
         <img [src]="'https://media.timeout.com/images/105654873/1024/768/image.webp'" alt="" class="cover">
         <div class="track-info">
             <h3 class="track-title">{{mockCover.name}}</h3>
-            <h5 class="track-title sub-title">{{mockCover?.album}}</h5>
+            <h5 class="track-title sub-title">{{mockCover.album}}</h5>
         </div>
         <div class="track-like">
             <button class="btn-like">
