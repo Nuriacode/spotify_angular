@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { TracksService } from '@modules/tracks/services/tracks.service';
 
 @Component({
   selector: 'app-side-bar',
@@ -15,6 +17,8 @@ export class SideBarComponent {
   }
 
   customOptions: Array<any> = []
+
+  constructor(private router: Router){}
 
   ngOnInit(): void {
     this.mainMenu.defaultOptions = [
